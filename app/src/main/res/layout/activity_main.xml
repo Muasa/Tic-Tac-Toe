@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBrown"
+    android:orientation="vertical"
+    tools:context="com.kalondu.android.tictactoe.MainActivity">
+
+    <ImageView
+
+        android:id="@+id/cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/start_image"
+        android:gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/start_activity" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:onClick="resetGame"
+        android:text="@string/reset"
+        android:textColor="@color/colorBrown"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/player_x_turn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/player_x_score"
+                android:layout_width="75dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:text="@string/_0"
+                android:textColor="@color/colorBrown"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/player_x_win"
+                android:layout_width="75dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:text="@string/player_x"
+                android:textColor="@color/colorBrown"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/box_one_view"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:onClick="boxOne"
+                android:text=""
+                android:textColor="@color/colorBrown"
+                android:textSize="60sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/box_two_view"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:onClick="boxTwo"
+                android:text=""
+                android:textColor="@color/colorBrown"
+                android:textSize="60sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/box_three_view"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:onClick="boxThree"
+                android:text=""
+                android:textColor="@color/colorBrown"
+                android:textSize="60sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="75dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="56dp"
+                android:gravity="center"
+                android:text="@string/score"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <Button
+
+                android:id="@+id/start_game"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/start_button2"
+                android:onClick="startGame"
+                android:textColor="@color/colorBrown"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+
+            <Button
+                android:id="@+id/box_four_view"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:onClick="boxFour"
+                android:text=""
+                android:textColor="@color/colorBrown"
+                android:textSize="60sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/box_five_view"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:onClick="boxFive"
+                android:text=""
+                android:textColor="@color/colorBrown"
+                android:textSize="60sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/box_six_view"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:onClick="boxSix"
+                android:text=""
+                android:textColor="@color/colorBrown"
+                android:textSize="60sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/player_o_turn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/player_o_score"
+                android:layout_width="75dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:text="@string/_0"
+                android:textColor="@color/colorBrown"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/player_o_win"
+                android:layout_width="75dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:text="@string/player_o"
+                android:textColor="@color/colorBrown"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/box_seven_view"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:onClick="boxSeven"
+                android:text=""
+                android:textColor="@color/colorBrown"
+                android:textSize="60sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/box_eight_view"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:onClick="boxEight"
+                android:text=""
+                android:textColor="@color/colorBrown"
+                android:textSize="60sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/box_nine_view"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:onClick="boxNine"
+                android:text=""
+                android:textColor="@color/colorBrown"
+                android:textSize="60sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
