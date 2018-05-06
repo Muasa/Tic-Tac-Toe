@@ -4,6 +4,8 @@ This app is a 3 x 3 grid Tic-Tac-Toe game. There are two players who take turns 
 
 # Read-Me-Screenshots
 
+![](Tic-Tac-Toe/Board%20View.png "Board View" )
+
 # Licence
 
 Copyright 2018, Muasa. S. K
