@@ -1,6 +1,6 @@
 # Tic-Tac-Toe (3 x 3)
 
-This app is a 3 x 3 grid Tic-Tac-Toe game. There are two players who take turns in placing marks onp the board. One player places the "X" mark on the board while the other player places the "O" mark on the board. In order to win or score a point, a player must place 3 marks either horizonatlly, vertical or diagonally on the board. Only one point is awarded. Once a player wins, no marks can be placed on the board unless the game is restarted. In the event that there is no winner, the game also has to be restarted. In this particular game ties do not count. 
+This app is a 3 x 3 grid Tic-Tac-Toe game. There are two players who take turns in placing marks onp the board. One player places the "X" mark on the board while the other player places the "O" mark on the board. In order to win or score a point, a player must place 3 marks either horizonatlly, vertical or diagonally on the board. Only one point is awarded. Once a player wins, no marks can be placed on the board unless the game is restarted. In the event that there is no winner, the game also has to be restarted. In this version of the Tic-Tac-Toe game, ties do not count. 
 
 # Read-Me-Screenshots
 
