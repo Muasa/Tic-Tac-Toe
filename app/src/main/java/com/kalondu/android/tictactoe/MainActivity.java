@@ -1,18 +1,18 @@
-/*
- * Copyright 2018
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+/***
+ Copyright 2018, Muasa. S. K
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at:
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ ***/
 
 
 package com.kalondu.android.tictactoe;
@@ -812,6 +812,45 @@ public class MainActivity extends AppCompatActivity {
             Button boxNineButton = findViewById(R.id.box_nine_view);
             boxNineButton.setEnabled(false);
 
+        } else if ((textOne.equals("X") || textOne.equals("O")) & (textTwo.equals("X") || textTwo.equals("O")) & (textThree.equals("X") || textThree.equals("O")) & (textFour.equals("X") || textFour.equals("O")) & (textFive.equals("X") || textFive.equals("O")) & (textSix.equals("X") || textSix.equals("O")) & (textSeven.equals("X") || textSeven.equals("O")) & (textEight.equals("X") || textEight.equals("O")) & (textNine.equals("X") || textNine.equals("O"))) {
+
+            scorePlayerO = 0;
+            scorePlayerX = 0;
+            displayForPlayerXScore(scorePlayerX);
+            displayForPlayerOScore(scorePlayerO);
+            displayForPlayerO("No Winner!");
+            displayForPlayerX("No Winner!");
+
+            Toast.makeText(this, "NO WINNER PLEASE RESET BOARD!", Toast.LENGTH_LONG).show();
+
+            Button boxOneButton = findViewById(R.id.box_one_view);
+            boxOneButton.setEnabled(false);
+
+            Button boxTwoButton = findViewById(R.id.box_two_view);
+            boxTwoButton.setEnabled(false);
+
+            Button boxThreeButton = findViewById(R.id.box_three_view);
+            boxThreeButton.setEnabled(false);
+
+            Button boxFourButton = findViewById(R.id.box_four_view);
+            boxFourButton.setEnabled(false);
+
+            Button boxFiveButton = findViewById(R.id.box_five_view);
+            boxFiveButton.setEnabled(false);
+
+            Button boxSixButton = findViewById(R.id.box_six_view);
+            boxSixButton.setEnabled(false);
+
+            Button boxSevenButton = findViewById(R.id.box_seven_view);
+            boxSevenButton.setEnabled(false);
+
+            Button boxEightButton = findViewById(R.id.box_eight_view);
+            boxEightButton.setEnabled(false);
+
+            Button boxNineButton = findViewById(R.id.box_nine_view);
+            boxNineButton.setEnabled(false);
+
+
         } else {
 
 
@@ -825,7 +864,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
-
+    
 
     /**
      * Method called when button 1 is clicked.
