@@ -4,19 +4,19 @@ This app is a 3 x 3 grid Tic-Tac-Toe game. There are two players who take turns 
 
 # Read-Me-Screenshots
 
-![](https://github.com/Muasa/Tic-Tac-Toe/blob/master/Introduction%20Screenshot.png "Introduction Screenshot")
+![](https://github.com/Muasa/Tic-Tac-Toe/blob/master/Introduction%20Screenshot.png) "Introduction Screenshot"
 
 ![](https://github.com/Muasa/Tic-Tac-Toe/blob/master/Board%20View.png "Board View" )
 
-![](https://github.com/Muasa/Tic-Tac-Toe/blob/master/Player%20X%20Turn%20Screenshot.png "Player X Turn")
+![](https://github.com/Muasa/Tic-Tac-Toe/blob/master/Player%20X%20Turn%20Screenshot.png) "Player X Turn"
 
-![](https://github.com/Muasa/Tic-Tac-Toe/blob/master/Player%20O%20Turn%20Screenshot.png "Player O Turn")
+![](https://github.com/Muasa/Tic-Tac-Toe/blob/master/Player%20O%20Turn%20Screenshot.png) "Player O Turn"
 
-![](https://github.com/Muasa/Tic-Tac-Toe/blob/master/Player%20X%20Win%20Screenshot.png "Player X Win")
+![](https://github.com/Muasa/Tic-Tac-Toe/blob/master/Player%20X%20Win%20Screenshot.png) "Player X Win"
 
-![](https://github.com/Muasa/Tic-Tac-Toe/blob/master/Player%20O%20Win%20Screenshot.png "Player O Win")
+![](https://github.com/Muasa/Tic-Tac-Toe/blob/master/Player%20O%20Win%20Screenshot.png) "Player O Win"
 
-![](https://github.com/Muasa/Tic-Tac-Toe/blob/master/No%20Winner.png "No Winner")
+![](https://github.com/Muasa/Tic-Tac-Toe/blob/master/No%20Winner.png) "No Winner"
 
 
 # Licence
